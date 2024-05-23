@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gt__gestion.taller_gt__gestion.taller,gt__gestion.taller.gt__gestion.taller,model_gt__gestion.taller_gt__gestion.taller,base.group_user,1,1,1,1

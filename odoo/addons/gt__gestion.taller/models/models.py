@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class prueba1(models.Model):
-#     _name = 'prueba1.prueba1'
-#     _description = 'prueba1.prueba1'
+# class gt__gestion.taller(models.Model):
+#     _name = 'gt__gestion.taller.gt__gestion.taller'
+#     _description = 'gt__gestion.taller.gt__gestion.taller'
 
 #     name = fields.Char()
 #     value = fields.Integer()
