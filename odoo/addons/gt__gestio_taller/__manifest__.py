@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "GT_Gestion.Taller",
+    'name': "GT_GestioTaller",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
