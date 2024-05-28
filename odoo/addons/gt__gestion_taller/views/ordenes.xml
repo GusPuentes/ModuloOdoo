@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+          <!--List view -->
+    <!-- <record model="ir.ui.view" id="gt__gestion_taller.clientes_list" >
+      <field name="name">Clientes</field>
+      <field name="model">gt__gestion_taller.clientes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name = "name"/>
+          <field name = "apellido"/>
+          <field name = "telefono"/>
+          <field name = "dni"/>
+          <field name = "correo"/>
+          <field name = "direccion"/>
+        </tree>
+      </field>  
+    </record> -->
+
+          <!--Form view -->
+
+    <record model="ir.ui.view" id="gt__gestion_taller.ordenes_form">
+      <field name="name">Ordenes</field>
+      <field name="model">gt__gestion_taller.ordenes</field>
+      <field name="arch" type="xml">
+        <form>
+          <group col='4' colspan='1'>
+            <group ></group>
+            <group >
+              <field name="marca"/>
+              <field name="modelo"/>
+            </group>
+            <group></group>
+            <group >
+              <!-- <field name="matricula"/> -->
+              <field name="piezas"/>
+            </group>
+          </group>
+        </form>
+      </field>
+    </record>      
+  </data>
+</odoo>

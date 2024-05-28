@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "GT_GestioTaller",
+    'name': "GT_GestionTaller",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Gestion del taller simplificada""",
 
     'description': """
-        Long description of module's purpose
+        Módulo para la ayuda a la gestión de un taller
     """,
 
-    'author': "My Company",
+    'author': "Gustavo Puentes",
     'website': "https://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -24,12 +23,14 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'views/clientes.xml',
+        'views/ordenes.xml',
+        'security/ir.model.access.csv'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    'application': True,
+    'installable': True,
 }
