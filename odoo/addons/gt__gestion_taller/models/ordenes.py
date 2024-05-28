@@ -5,7 +5,6 @@ class Ordenes(models.Model):
     _description = 'Datos de las ordenes'
 
     def cod_order(self):
-        
         precio = self.precio_compra * 0.12
         self.precio_venta = precio * 0.21
 
