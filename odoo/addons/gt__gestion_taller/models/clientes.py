@@ -6,7 +6,7 @@ class Clientes(models.Model):
 
     name = fields.Char(String = "Nombre", required = True)
     apellido = fields.Char(String = "Apellidos", required=True)
-    dni = fields.Many2one('gt__gestion_taller.vehiculos', 'propietario_dni')
+    dni = fields.Many2one('gt__gestion_taller.vehiculos')
     telefono = fields.Integer(required=True)
     correo = fields.Char(required=True)
     direccion = fields.Char(String = "Direccion", required=True)

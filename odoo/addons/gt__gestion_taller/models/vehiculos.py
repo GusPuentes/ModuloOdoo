@@ -6,7 +6,7 @@ class Vehiculos(models.Model):
 
     marca = fields.Char(String = "Nombre", required = True)
     modelo = fields.Char(String = "Apellidos", required=True)
-    propietario_dni = fields.One2many('gt__gestion_taller.Clientes','dni')
+    propietario_dni = fields.One2many('gt__gestion_taller.clientes','dni')
     # matricula = fields.One2Many('gt_gestion_taller.ordenes', 'vehiculos_matriculas')
     
     
