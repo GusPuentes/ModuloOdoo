@@ -10,4 +10,3 @@ class Clientes(models.Model):
     telefono = fields.Integer(required=True)
     correo = fields.Char(required=True)
     direccion = fields.Char(String = "Direccion", required=True)
-    # vehiculos_matriculas = fields.Many2One('gt__gestion_taller.Vehiculos', 'matricula', string='Matricula del vechiculo')

@@ -32,7 +32,7 @@
             <group></group>
             <group >
               <!-- <field name="matricula"/> -->
-              <field name="piezas"/>
+              <field name="piezas" widget ="json"/>
             </group>
           </group>
         </form>
