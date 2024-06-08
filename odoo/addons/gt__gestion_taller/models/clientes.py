@@ -6,8 +6,8 @@ class Clientes(models.Model):
 
     name = fields.Char(String = "Nombre", required = True)
     apellido = fields.Char(String = "Apellidos", required = True)
-    dni = fields.Char(String = 'Dni', required = True)
-    telefono = fields.Integer(string = "Telefono")
+    dni = fields.Char(String = "Dni", required = True)
+    telefono = fields.Integer(String = "Telefono")
     correo = fields.Char()
     direccion = fields.Char(String = "Direccion")
-    vehiculos_ids = fields.Many2many('gt__gestion_taller.vehiculos', string='vehiculos')
+    vehiculos_ids = fields.Many2many('gt__gestion_taller.vehiculos', String="vehiculos")
