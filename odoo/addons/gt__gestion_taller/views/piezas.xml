@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+          <!--List view -->
+    <record model="ir.ui.view" id="gt__gestion_taller.piezas_list" >
+      <field name="name">Piezas</field>
+      <field name="model">gt__gestion_taller.piezas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name = "name"/>
+          <field name = "codigo"/>
+          <field name = "marca"/>
+          <field name = "stock"/>
+          <field name = "precio_compra"/>
+          <field name = "precio_venta"/>
+        </tree>
+      </field>  
+    </record>
+
+          <!--Form view -->
+
+    <record model="ir.ui.view" id="gt__gestion_taller.piezas_form">
+      <field name="name">Piezas</field>
+      <field name="model">gt__gestion_taller.piezas</field>
+      <field name="arch" type="xml">
+        <form>
+         <div>
+          <group col='4' colspan='1'>
+            <group >
+              <field name="name"/>
+              <field name="marca"/>
+              <field name="codigo"/>
+            </group>
+            <div></div>
+            <group>
+              <field name="stock"/>
+              <field name="precio_compra"/>
+              <field name="precio_venta"/>
+            </group>
+          </group>
+         </div>
+        </form>
+      </field>
+    </record>      
+  </data>
+</odoo>

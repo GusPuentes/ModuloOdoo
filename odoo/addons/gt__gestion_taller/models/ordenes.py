@@ -4,15 +4,18 @@ class Ordenes(models.Model):
     _name = 'gt__gestion_taller.ordenes'
     _description = 'Datos de las ordenes'
 
-    def cod_order(self):
-        precio = self.precio_compra * 0.12
-        self.precio_venta = precio * 0.21
+    def fecha_salida(self):
+        if(self.terminado == True): 
+            self.fecha_salida =  fields.Date.today
 
+        
     marca = fields.Char(String = "Marca", required = True)
     modelo = fields.Char(String = "Modelo", required=True)
-    # matricula_vehiculo = fields.Many2one('gt__gestion_taller.Clientes')
+    name = fields.Many2one('gt__gestion_taller.vehiculos', string='matricula')
     fecha_entrada = fields.Date('Fecha de entrada')
-    piezas = fields.Json(string = "información adicional", default ={}) 
-    
-    
-
+    piezas_id = fields.Many2one('gt__gestion_taller.piezas')
+    trabajadores_ids = fields.Many2many('gt__gestion_taller.trabajadores', string='Trabajadores Asignados')
+    fallos = fields.Char(String = "Descripcion de los fallos", required = True)
+    diagnostico = fields.Char(String = "Diagnostico mecánico", required = True)
+    fecha_salida = fields.Date('Fecha de salida')
+    terminado = fields.Boolean(String = 'Terminado', default = False)

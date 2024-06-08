@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_piezas">
+      <field name="name">Piezas</field>
+      <field name="res_model">gt__gestion_taller.piezas</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_clientes">
+      <field name="name">Clientes</field>
+      <field name="res_model">gt__gestion_taller.clientes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_ordenes">
+      <field name="name">Ordenes</field>
+      <field name="res_model">gt__gestion_taller.ordenes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_trabajadores">
+      <field name="name">Trtabajadores</field>
+      <field name="res_model">gt__gestion_taller.trabajadores</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_vehiculos">
+      <field name="name">Vehículos</field>
+      <field name="res_model">gt__gestion_taller.vehiculos</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <!-- Top menu item -->
+
+    <menuitem name="Taller" id="gt__gestion_taller.menu_root"/>
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="avs_music_player.menu_1" parent="avs_music_player.menu_root"/>
+    <menuitem name="Menu 2" id="avs_music_player.menu_2" parent="avs_music_player.menu_root"/>
+-->
+    <!-- actions -->
+
+    <menuitem name="Clientes" id="gt__gestion_taller_menu_clientes" parent="gt__gestion_taller.menu_root"
+              action="gt__gestion_taller.action_window_clientes"/>
+
+    <menuitem name="Ordenes" id="gt__gestion_taller_menu_ordenes" parent="gt__gestion_taller.menu_root"
+              action="gt__gestion_taller.action_window_ordenes"/>
+
+    <menuitem name="Piezas" id="gt__gestion_taller_menu_piezas" parent="gt__gestion_taller.menu_root"
+              action="gt__gestion_taller.action_window_piezas"/>
+
+    <menuitem name="Vehiculos" id="gt__gestion_taller_menu_vehiculos" parent="gt__gestion_taller.menu_root"
+              action="gt__gestion_taller.action_window_vehiculos"/>
+    
+    <menuitem name="Trabajadores" id="gt__gestion_taller_menu_trabajadores" parent="gt__gestion_taller.menu_root"
+              action="gt__gestion_taller.action_window_trabajadores"/>          
+
+  </data>
+</odoo>

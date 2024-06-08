@@ -2,3 +2,5 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 acceso_clientes,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_clientes,base.group_user,1,1,1,1
 acceso_ordenes,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_ordenes,base.group_user,1,1,1,1
 acceso_vehiculos,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_vehiculos,base.group_user,1,1,1,1
+acceso_piezas,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_piezas,base.group_user,1,1,1,1
+acceso_trabajadores,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_trabajadores,base.group_user,1,1,1,1

@@ -1,20 +1,18 @@
 <odoo>
   <data>
           <!--List view -->
-    <!-- <record model="ir.ui.view" id="gt__gestion_taller.clientes_list" >
-      <field name="name">Clientes</field>
-      <field name="model">gt__gestion_taller.clientes</field>
+     <record model="ir.ui.view" id="gt__gestion_taller.ordenes_list" >
+      <field name="name">Ordenes</field>
+      <field name="model">gt__gestion_taller.ordenes</field>
       <field name="arch" type="xml">
         <tree>
-          <field name = "name"/>
-          <field name = "apellido"/>
-          <field name = "telefono"/>
-          <field name = "dni"/>
-          <field name = "correo"/>
-          <field name = "direccion"/>
+          <field name = "marca"/>
+          <field name = "modelo"/>
+          <field name = "fecha_entrada"/>
+          <field name = "name" />
         </tree>
       </field>  
-    </record> -->
+    </record>
 
           <!--Form view -->
 
@@ -23,17 +21,24 @@
       <field name="model">gt__gestion_taller.ordenes</field>
       <field name="arch" type="xml">
         <form>
-          <group col='4' colspan='1'>
-            <group ></group>
+          <group style = "margin-left:15%" col='4' colspan='1'>
             <group >
               <field name="marca"/>
-              <field name="modelo"/>
+              <field name="modelo" />
+              <field name = "name" String ='Matrícula'/>
             </group>
-            <group></group>
+            <group>
+              <field name="fecha_entrada"/>
+              <field name="fallos"/>
+              <field name="piezas_id" /> 
+            </group>
             <group >
-              <!-- <field name="matricula"/> -->
-              <field name="piezas" widget ="json"/>
+              <field name="trabajadores_ids" widget="many2many_tags"/> 
+              <field name="diagnostico" /> 
+              <field name="fecha_salida" /> 
+              <field name="terminado" /> 
             </group>
+            <div> </div>
           </group>
         </form>
       </field>

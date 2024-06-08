@@ -25,6 +25,10 @@
     'data': [
         'views/clientes.xml',
         'views/ordenes.xml',
+        'views/trabajadores.xml',
+        'views/piezas.xml',
+        'views/vehiculos.xml',
+        'views/menus.xml',
         'security/ir.model.access.csv'
     ],
     # only loaded in demonstration mode
