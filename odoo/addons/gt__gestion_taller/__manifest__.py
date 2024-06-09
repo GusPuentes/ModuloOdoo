@@ -31,6 +31,7 @@
         'views/menus.xml',
         'reports/report.xml',
         'reports/report_order.xml',
+        'reports/factura_order.xml',
         'security/ir.model.access.csv'
     ],
     # only loaded in demonstration mode

@@ -1,10 +1,21 @@
 <odoo>
     <report
         id="presupuesto_orden"
-        string="Crear presupuesto"
+        string="Presupuesto"
         model = "gt__gestion_taller.ordenes"
         report_type="qweb-pdf"
         name ="gt__gestion_taller.report_order"
-        file="gt__gestion_taller.report_order" />
-    
+        file="gt__gestion_taller.report_order" 
+        print_report_name="'Presupuesto_' + object.matricula"/>
+
+        <report
+        id="factura_orden"
+        string="Crear factura"
+        model="gt__gestion_taller.ordenes"
+        report_type="qweb-pdf"
+        name="gt__gestion_taller.report_order1"
+        file="gt__gestion_taller.report_order1"
+        print_report_name="'Factura_' + object.matricula"
+    />
+        
 </odoo>

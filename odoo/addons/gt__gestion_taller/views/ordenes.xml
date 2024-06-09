@@ -26,17 +26,20 @@
               <field name="marca"/>
               <field name="modelo" />
               <field name = "name" String ='Matrícula'/>
+              <field name="fecha_entrada"/>
             </group>
             <group>
-              <field name="fecha_entrada"/>
               <field name="fallos"/>
               <field name="piezas_id" /> 
+              <field name="precio_pieza" /> 
+              <field name="terminado" /> 
             </group>
             <group >
               <field name="trabajadores_ids" widget="many2many_tags"/> 
+              <field name="precio_hora" /> 
               <field name="diagnostico" /> 
-              <field name="fecha_salida" /> 
-              <field name="terminado" /> 
+              <field name="fecha_salida" />
+              <field name="total" />
             </group>
             <div> </div>
           </group>
