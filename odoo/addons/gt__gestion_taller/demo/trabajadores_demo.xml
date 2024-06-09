@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+          <record id="trabajador1" model="gt__gestion_taller.trabajadores">
+            <field name="name">Gustavo</field>
+            <field name="Apellido">Puentes</field>
+            <field name="puesto">Mecánico</field>
+          </record>
+
+          <record id="trabajador2" model="gt__gestion_taller.trabajadores">
+            <field name="name">Miguel</field>
+            <field name="Apellido">Cano</field>
+            <field name="puesto">Mecánico</field>
+          </record>
+    </data>
+</odoo>

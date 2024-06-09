@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+          <record id="pieza1" model="gt__gestion_taller.piezas">
+            <field name="name">Correa de servicios </field>
+            <field name="marca">DAYCO</field>
+            <field name="codigo">D-340</field>
+            <field name="precio_compra">7,90</field>
+            <field name="stock">10</field>
+          </record>
+
+          <record id="pieza2" model="gt__gestion_taller.piezas">
+            <field name="name">Airbag</field>
+            <field name="marca">VEMO</field>
+            <field name="codigo">V70-72-0459</field>
+            <field name="precio_compra">448,50</field>
+            <field name="stock">2</field>
+          </record>
+    </data>
+</odoo>

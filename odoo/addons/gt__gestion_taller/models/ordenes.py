@@ -9,13 +9,13 @@ class Ordenes(models.Model):
             self.fecha_salida =  fields.Date.today
 
         
-    marca = fields.Char(String = "Marca", required = True)
-    modelo = fields.Char(String = "Modelo", required=True)
+    marca = fields.Char(String = "Marca")
+    modelo = fields.Char(String = "Modelo")
     name = fields.Many2one('gt__gestion_taller.vehiculos', string='matricula')
     fecha_entrada = fields.Date('Fecha de entrada')
     piezas_id = fields.Many2one('gt__gestion_taller.piezas')
     trabajadores_ids = fields.Many2many('gt__gestion_taller.trabajadores', string='Trabajadores Asignados')
-    fallos = fields.Char(String = "Descripcion de los fallos", required = True)
-    diagnostico = fields.Char(String = "Diagnostico mecánico", required = True)
+    fallos = fields.Char(String = "Descripcion de los fallos")
+    diagnostico = fields.Char(String = "Diagnostico mecánico")
     fecha_salida = fields.Date('Fecha de salida')
     terminado = fields.Boolean(String = 'Terminado', default = False)

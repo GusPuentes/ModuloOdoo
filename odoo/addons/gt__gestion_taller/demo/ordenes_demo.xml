@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+
+          <record id="orden1" model="gt__gestion_taller.ordenes">
+            <field name="marca">kia</field>
+            <field name="modelo">Rio</field>
+            <field name="name">1234GBZ</field>
+            <field name="fecha_entrada">2024-08-06</field>
+            <field name="piezas_id" ref="pieza1" />
+            <field name="trabajadores_ids" eval="[(4, [ref('trabajador1')])]" />
+            <field name="fallos">Correa de servicios hace ruido al arrancar</field>
+            <field name="diagnostico">La correa de servicio está desgastada, hay que sustituirla</field>                        
+          </record>
+
+          <record id="orden2" model="gt__gestion_taller.ordenes">
+            <field name="marca">BMW</field>
+            <field name="modelo">330i</field>
+            <field name="name">4321MHB</field>
+            <field name="fecha_entrada">2024-10-06</field>
+            <field name="piezas_id" ref="pieza2"/>
+            <field name="trabajadores_ids" eval="[(4, [ref('trabajador2')])]" />
+            <field name="fallos">Fallo piloto airbag encendido.</field>
+            <field name="diagnostico">Conector del airbag presenta daños por manipulación indevida, también se aconseja al cliente a sustituir los necumáticos, están desgastados.</field>
+          </record>
+    </data>
+</odoo>

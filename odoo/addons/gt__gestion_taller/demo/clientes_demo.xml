@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+
+          <record id="cliente1" model="gt__gestion_taller.clientes">
+            <field name="name">Javier</field>
+            <field name="apellido">Sebastian</field>
+            <field name="dni">1234567M</field>
+            <field name="telefono">123456789</field>
+            <field name="correo">JSebastian@educa.madrid.org</field>
+            <field name="direccion">Av de la Onu 81</field>
+            <field name="vehiculos_ids" eval="[(4, 'vehiculo1', 0)]" />
+          </record>
+
+          <record id="cliente2" model="gt__gestion_taller.clientes">
+            <field name="name">Macarena</field>
+            <field name="apellido">Lopez</field>
+            <field name="dni">7654321V</field>
+            <field name="telefono">987654321</field>
+            <field name="correo">Macarena@educa.madrid.org</field>
+            <field name="vehiculos_ids" eval="[(4, 'vehiculo2', 0)]"/>
+          </record>
+    </data>
+</odoo>

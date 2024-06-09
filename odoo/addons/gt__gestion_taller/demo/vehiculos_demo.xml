@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+          <record id="vehiculo1" model="gt__gestion_taller.vehiculos">
+            <field name="name">1234GBZ</field>
+            <field name="marca">Kia</field>
+            <field name="modelo">Rio</field>
+            
+          </record>
+
+          <record id="vehiculo2" model="gt__gestion_taller.vehiculos">
+            <field name="name">4321MHB</field>
+            <field name="marca">BMW</field>
+            <field name="modelo">330i</field>
+          </record>
+    </data>
+</odoo>

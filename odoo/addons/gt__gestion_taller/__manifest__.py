@@ -29,11 +29,18 @@
         'views/piezas.xml',
         'views/vehiculos.xml',
         'views/menus.xml',
+        'reports/report.xml',
+        'reports/report_order.xml',
         'security/ir.model.access.csv'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
+        'demo/vehiculos_demo.xml',
+        'demo/piezas_demo.xml',
+        'demo/trabajadores_demo.xml',
+        'demo/clientes_demo.xml',
+        'demo/ordenes_demo.xml',
     ],
     'application': True,
     'installable': True,

@@ -1,0 +1,10 @@
+<odoo>
+    <report
+        id="presupuesto_orden"
+        string="Crear presupuesto"
+        model = "gt__gestion_taller.ordenes"
+        report_type="qweb-pdf"
+        name ="gt__gestion_taller.report_order"
+        file="gt__gestion_taller.report_order" />
+    
+</odoo>

@@ -9,6 +9,7 @@
           <field name = "name"/>
           <field name = "apellido"/>
           <field name="puesto"/>
+          <field name="precio_hora" />
         </tree>
       </field>  
     </record>
@@ -20,14 +21,14 @@
       <field name="model">gt__gestion_taller.trabajadores</field>
       <field name="arch" type="xml">
         <form>
-          <group col='4' colspan='1'>
+          <group col='6' colspan='2'>
             <group ></group>
             <group >
               <field name="name"/>
-            </group>
-            <group></group>
-            <group >
               <field name="apellido"/>
+            </group>
+            <group >
+              <field name="precio_hora" />
               <field name="puesto"/>
             </group>
           </group>
