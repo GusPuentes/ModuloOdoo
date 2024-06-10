@@ -20,6 +20,9 @@
       <field name="name">Ordenes</field>
       <field name="model">gt__gestion_taller.ordenes</field>
       <field name="arch" type="xml">
+        <header>
+          <button name="enviar_correo_directo" string="Enviar Correo" type="object" class="oe_highlight"/>
+        </header>
         <form>
           <group style = "margin-left:15%" col='4' colspan='1'>
             <group >
@@ -88,6 +91,10 @@
                                     <strong>Total:</strong> <field name="total"/>
                                 </div>
                             </div>
+<<<<<<< HEAD
+=======
+                            
+>>>>>>> 37a840b9b13b8a2d6e433a680c20012b711956cf
                         </div>
                     </t>
                 </templates>
