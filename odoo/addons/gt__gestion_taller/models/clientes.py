@@ -4,10 +4,31 @@ class Clientes(models.Model):
     _name = 'gt__gestion_taller.clientes'
     _description = 'Datos de los clientes'
 
+    def create(self, vals):
+        # Crear el registro del cliente
+        cliente = super(Clientes, self).create(vals)
+        completo = self.name + " " + self.apellido
+        
+        # Crear el contacto asociado en res.partner
+        self.env['res.partner'].create(
+        {
+            'name': completo,
+            'email': cliente.correo,
+            'phone': cliente.telefono,
+            'street':cliente.direccion,
+            'ref':cliente.dni,
+            'customer_rank': 1,
+        })
+        
+        return cliente
+
     name = fields.Char(String = "Nombre")
     apellido = fields.Char(String = "Apellidos")
     dni = fields.Char(String = "Dni")
-    telefono = fields.Integer(String = "Telefono")
+    telefono = fields.Char(String = "Telefono")
     correo = fields.Char()
     direccion = fields.Char(String = "Direccion")
     vehiculos_ids = fields.Many2many('gt__gestion_taller.vehiculos', String="vehiculos")
+    customer_rank = fields.Binary('customer_rank')
+
+    
