@@ -14,7 +14,7 @@
                                     <p><strong>Modelo del vehículo:</strong></p>
                                         <span style="margin-left:3%" t-field="o.modelo"/>
                                     <p><strong>Matricula del vehículo:</strong></p>
-                                        <span style="margin-left:3%" t-flied="o.name"/>
+                                        <span style="margin-left:3%" t-flied="o.matricula"/>
                                     <p><strong>Fecha de entrada del vehículo:</strong></p>
                                         <span style="margin-left:3%" t-field="o.fecha_entrada"/>
                                 </div>

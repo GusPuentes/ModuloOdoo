@@ -6,10 +6,11 @@
       <field name="model">gt__gestion_taller.ordenes</field>
       <field name="arch" type="xml">
         <tree>
-          <field name = "marca"/>
-          <field name = "modelo"/>
+          <field name = "name"/>
+          <field name = "trabajadores_ids"/>
           <field name = "fecha_entrada"/>
-          <field name = "name" />
+          <field name = "diagnosticado" />
+              <field name="aprobado" />
         </tree>
       </field>  
     </record>
@@ -30,22 +31,22 @@
               <field name="modelo" />
               <field name ="name" String ='Matrícula'/>
               <field name="fecha_entrada"/>
-              <field name="diagnosticado"/>
+              <field name="cliente_id"/>
               <field name="correo"/>
             </group>
             <group>
-              <field name="cliente_id"/>
               <field name="fallos"/>
-              <field name="piezas_id" /> 
-              <field name="precio_pieza" /> 
-              <field name="terminado" /> 
+              <field name="trabajadores_ids" widget="many2many_tags"/> 
+              <field name="precio_hora" />
+              <field name="diagnostico" /> 
+              <field name="diagnosticado" /> 
             </group>
             <group >
-              <field name="trabajadores_ids" widget="many2many_tags"/> 
-              <field name="precio_hora" /> 
-              <field name="diagnostico" /> 
+              <field name="piezas_id" /> 
+              <field name="precio_pieza" />
               <field name="fecha_salida" />
               <field name="total" />
+              <field name="aprobado" />
               <field name="attachment_ids" widget="many2many_binary"/>
             </group>
             <div></div>
@@ -65,7 +66,7 @@
                 <field name="modelo"/>
                 <field name="name"/>
                 <field name="fecha_entrada"/>
-                <field name="terminado"/>
+                <field name="aprobado"/>
                 <field name="total"/>
                 <field name="cliente_id"/>
                 

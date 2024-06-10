@@ -4,12 +4,6 @@ class Ordenes(models.Model):
     _name = 'gt__gestion_taller.ordenes'
     _description = 'Datos de las ordenes'
 
-    def fecha_salida(self):
-        if(self.terminado == True): 
-            self.fecha_salida =  fields.Date.today
-        else:
-            self.fecha_salida = self.fecha_entrada
-
     def obtener_datos_piezas(self):
         if self.diagnosticado == True:
             for record in self:
@@ -78,7 +72,7 @@ class Ordenes(models.Model):
     fallos = fields.Char(String = "Descripcion de los fallos")
     diagnostico = fields.Char(String = "Diagnostico mecánico")
     fecha_salida = fields.Date('Fecha de salida', required=False)
-    terminado = fields.Boolean(String = 'Terminado', default = False)
+    aprobado = fields.Boolean('Reparacion aprobada', default = False)
     precio_pieza = fields.Float(compute = 'obtener_datos_piezas', digits=(16, 2))
     precio_hora = fields.Float(compute = 'obtener_datos_trabajador', digits=(16, 2))
     total= fields.Float(compute = 'suma_total', digits=(16, 2))
