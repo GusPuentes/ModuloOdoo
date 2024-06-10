@@ -5,7 +5,7 @@ class Vehiculos(models.Model):
     _description = 'Datos de los vehiculos'
 
     name = fields.Char(String ='Matrícula' )
-    marca = fields.Char(String = "Nombre")
-    modelo = fields.Char(String = "Apellidos")
-    orden_ids = fields.One2many('gt__gestion_taller.ordenes', 'name', string='Órdenes')
+    marca = fields.Char(String = "Vehiculo")
+    telefono = fields.Char(String = "Teléfono")
+    
     

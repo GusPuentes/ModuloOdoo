@@ -15,19 +15,19 @@
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_ordenes">
       <field name="name">Ordenes</field>
       <field name="res_model">gt__gestion_taller.ordenes</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_trabajadores">
       <field name="name">Trtabajadores</field>
       <field name="res_model">gt__gestion_taller.trabajadores</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form</field>
     </record>
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_vehiculos">
       <field name="name">Vehículos</field>
       <field name="res_model">gt__gestion_taller.vehiculos</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form</field>
     </record>
-
+    
     <!-- Top menu item -->
 
     <menuitem name="Taller" id="gt__gestion_taller.menu_root"/>

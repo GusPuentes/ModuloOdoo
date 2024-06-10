@@ -30,6 +30,7 @@
             <group >
               <field name="precio_hora" />
               <field name="puesto"/>
+              <field name="correo"/>
             </group>
           </group>
         </form>
