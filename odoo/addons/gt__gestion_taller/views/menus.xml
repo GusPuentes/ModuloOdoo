@@ -28,6 +28,12 @@
       <field name="view_mode">tree,form,kanban</field>
     </record>
     
+    </record>
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_citas">
+      <field name="name">Citas</field>
+      <field name="res_model">gt__gestion_taller.citas</field>
+      <field name="view_mode">tree,calendar,form</field>
+    </record>
     <!-- Top menu item -->
 
     <menuitem name="Taller" id="gt__gestion_taller.menu_root"/>
