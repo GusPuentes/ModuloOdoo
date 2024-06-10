@@ -27,11 +27,13 @@
         'views/ordenes.xml',
         'views/trabajadores.xml',
         'views/piezas.xml',
+        'views/citas.xml',
         'views/vehiculos.xml',
         'views/menus.xml',
         'reports/report.xml',
         'reports/report_order.xml',
         'reports/factura_order.xml',
+        # 'data/mail_template.xml',
         'security/ir.model.access.csv'
     ],
     # only loaded in demonstration mode

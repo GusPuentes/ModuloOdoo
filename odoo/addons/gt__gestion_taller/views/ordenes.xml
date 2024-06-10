@@ -25,10 +25,13 @@
             <group >
               <field name="marca"/>
               <field name="modelo" />
-              <field name = "name" String ='Matrícula'/>
+              <field name ="name" String ='Matrícula'/>
               <field name="fecha_entrada"/>
+              <field name="diagnosticado"/>
+              <field name="correo"/>
             </group>
             <group>
+              <field name="cliente_id"/>
               <field name="fallos"/>
               <field name="piezas_id" /> 
               <field name="precio_pieza" /> 
@@ -40,11 +43,56 @@
               <field name="diagnostico" /> 
               <field name="fecha_salida" />
               <field name="total" />
+              <field name="attachment_ids" widget="many2many_binary"/>
             </group>
-            <div> </div>
+            <div></div>
           </group>
+          <br></br>
+          <header>
+            <button name="enviar_correo_directo" string="Enviar Correo" type="object" class="oe_highlight"/>
+          </header>
         </form>
       </field>
-    </record>      
+    </record>  
+    
+                <!-- VISTA KANBAN -->
+    
+    <record id="gt__gestion_taller.ordenes_kanban" model="ir.ui.view">
+        <field name="name">Ordenes</field>
+        <field name="model">gt__gestion_taller.ordenes</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="marca"/>
+                <field name="modelo"/>
+                <field name="name"/>
+                <field name="fecha_entrada"/>
+                <field name="terminado"/>
+                <field name="total"/>
+                <field name="cliente_id"/>
+                
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <strong>
+                                  <field name="marca"/> <br></br>
+                                  <field name="modelo"/>
+                                </strong>
+                                <div>
+                                    <field name="name"/>
+                                </div>
+                                <div>
+                                    <strong>Cliente:</strong> <field name="cliente_id"/>
+                                </div>
+                                <div>
+                                    <strong>Total:</strong> <field name="total"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
   </data>
 </odoo>

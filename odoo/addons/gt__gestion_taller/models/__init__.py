@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import clientes, piezas, ordenes, vehiculos, trabajadores
+from . import clientes, piezas, ordenes, vehiculos, trabajadores, citas

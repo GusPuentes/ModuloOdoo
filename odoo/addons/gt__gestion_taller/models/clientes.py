@@ -1,18 +1,18 @@
-from odoo import models, fields
+from odoo import models, fields,api
 
 class Clientes(models.Model):
     _name = 'gt__gestion_taller.clientes'
     _description = 'Datos de los clientes'
 
+    @api.model
     def create(self, vals):
         # Crear el registro del cliente
         cliente = super(Clientes, self).create(vals)
-        completo = self.name + " " + self.apellido
         
         # Crear el contacto asociado en res.partner
         self.env['res.partner'].create(
         {
-            'name': completo,
+            'name': f"{cliente.name} {cliente.apellido}",
             'email': cliente.correo,
             'phone': cliente.telefono,
             'street':cliente.direccion,

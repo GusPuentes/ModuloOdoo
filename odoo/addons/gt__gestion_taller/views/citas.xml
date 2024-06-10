@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+
+    <!-- Vista calendario -->
+
+    <record id="gt__gestion_taller.ordenes_calendar" model="ir.ui.view">
+      <field name="name">Citas</field>
+      <field name="model">gt__gestion_taller.citas</field>
+      <field name="arch" type="xml">
+          <calendar string="Citas" date_start="entrada" date_stop="salida">
+              <field name="name"/>
+              <field name="telefono"/>
+              <field name="marca"/>
+          </calendar>
+      </field>
+    </record>
+
+    <!--List view -->
+    <record model="ir.ui.view" id="gt__gestion_taller.citas_list" >
+      <field name="name">Citas</field>
+      <field name="model">gt__gestion_taller.citas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name = "name"/>
+          <field name = "marca"/>
+          <field name = "entrada"/>
+          <field name = "salida" />
+        </tree>
+      </field>  
+    </record>
+
+
+<!--Form view -->
+
+<record model="ir.ui.view" id="gt__gestion_taller.citas_form">
+  <field name="name">Citas</field>
+  <field name="model">gt__gestion_taller.citas</field>
+  <field name="arch" type="xml">
+    <form>
+      <group col='4' colspan='1'>
+        <group >
+          <field name="name"/>
+          <field name="marca"/>
+          <field name="telefono" string="Matrícula"/>
+          <field name="entrada"/>
+          <field name="salida"/>
+        </group>
+      </group>
+    </form>
+  </field>
+</record>  
+  </data>
+</odoo>

@@ -15,28 +15,28 @@
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_ordenes">
       <field name="name">Ordenes</field>
       <field name="res_model">gt__gestion_taller.ordenes</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_trabajadores">
       <field name="name">Trtabajadores</field>
       <field name="res_model">gt__gestion_taller.trabajadores</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form</field>
     </record>
     <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_vehiculos">
       <field name="name">Vehículos</field>
       <field name="res_model">gt__gestion_taller.vehiculos</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form</field>
     </record>
-
+    <record model="ir.actions.act_window" id="gt__gestion_taller.action_window_citas">
+      <field name="name">Citas</field>
+      <field name="res_model">gt__gestion_taller.citas</field>
+      <field name="view_mode">tree,calendar,form</field>
+    </record>
+    
     <!-- Top menu item -->
 
     <menuitem name="Taller" id="gt__gestion_taller.menu_root"/>
 
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="avs_music_player.menu_1" parent="avs_music_player.menu_root"/>
-    <menuitem name="Menu 2" id="avs_music_player.menu_2" parent="avs_music_player.menu_root"/>
--->
     <!-- actions -->
 
     <menuitem name="Clientes" id="gt__gestion_taller_menu_clientes" parent="gt__gestion_taller.menu_root"
@@ -54,5 +54,7 @@
     <menuitem name="Trabajadores" id="gt__gestion_taller_menu_trabajadores" parent="gt__gestion_taller.menu_root"
               action="gt__gestion_taller.action_window_trabajadores"/>          
 
+    <menuitem  name="Citas" id="gt__gestion_taller_menu_citas" parent="gt__gestion_taller.menu_root" 
+              action="gt__gestion_taller.action_window_citas"/>
   </data>
 </odoo>

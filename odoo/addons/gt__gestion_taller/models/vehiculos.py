@@ -8,11 +8,4 @@ class Vehiculos(models.Model):
     marca = fields.Char(String = "Nombre")
     modelo = fields.Char(String = "Apellidos")
     orden_ids = fields.One2many('gt__gestion_taller.ordenes', 'name', string='Órdenes')
-
     
-    
-
-    
-    
-    
-

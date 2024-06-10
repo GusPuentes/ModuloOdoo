@@ -4,3 +4,4 @@ acceso_ordenes,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_or
 acceso_vehiculos,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_vehiculos,base.group_user,1,1,1,1
 acceso_piezas,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_piezas,base.group_user,1,1,1,1
 acceso_trabajadores,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_trabajadores,base.group_user,1,1,1,1
+acceso_citas,gt__gestion_taller.gt__gestion_taller,model_gt__gestion_taller_citas,base.group_user,1,1,1,1
