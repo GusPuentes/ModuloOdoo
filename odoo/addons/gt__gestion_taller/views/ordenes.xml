@@ -20,10 +20,10 @@
       <field name="name">Ordenes</field>
       <field name="model">gt__gestion_taller.ordenes</field>
       <field name="arch" type="xml">
-        <header>
-          <button name="enviar_correo_directo" string="Enviar Correo" type="object" class="oe_highlight"/>
-        </header>
         <form>
+          <header>
+            <button name="enviar_correo_directo" string="Enviar Correo" type="object" class="oe_highlight"/>
+          </header>
           <group style = "margin-left:15%" col='4' colspan='1'>
             <group >
               <field name="marca"/>
@@ -50,10 +50,6 @@
             </group>
             <div></div>
           </group>
-          <br></br>
-          <header>
-            <button name="enviar_correo_directo" string="Enviar Correo" type="object" class="oe_highlight"/>
-          </header>
         </form>
       </field>
     </record>  
@@ -91,11 +87,7 @@
                                     <strong>Total:</strong> <field name="total"/>
                                 </div>
                             </div>
-<<<<<<< HEAD
-=======
-                            
->>>>>>> 37a840b9b13b8a2d6e433a680c20012b711956cf
-                        </div>
+                          </div>
                     </t>
                 </templates>
             </kanban>

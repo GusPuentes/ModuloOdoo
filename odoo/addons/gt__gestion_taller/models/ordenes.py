@@ -41,18 +41,9 @@ class Ordenes(models.Model):
                 cliente = self.env['gt__gestion_taller.clientes'].browse(record.cliente_id.id)
                 self.correo = cliente.correo
     
-<<<<<<< HEAD
-    
-    
-=======
-    def send_mail_template(self):
-        template = self.en.ref('send_email.example_email_template')
-        self.env['mail.template'].browase(template.id).send_mail(self.id)
-
->>>>>>> 37a840b9b13b8a2d6e433a680c20012b711956cf
     def enviar_correo_directo(self):
         for record in self:
-            
+
             email_to = self.correo
             subject = "Presupuesto de Orden"
             body_html = """
