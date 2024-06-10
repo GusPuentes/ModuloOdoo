@@ -6,7 +6,7 @@
       <field name="model">gt__gestion_taller.piezas</field>
       <field name="arch" type="xml">
         <tree>
-          <field name = "name"/>
+          <field name = "name" string='Nombre'/>
           <field name = "codigo"/>
           <field name = "marca"/>
           <field name = "stock"/>

@@ -8,7 +8,7 @@ class Piezas(models.Model):
         precio = (self.precio_compra * 0.12) + self.precio_compra
         self.precio_venta = (precio * 0.21) + precio
 
-    name =fields.Char(String = "Nombre") 
+    name =fields.Char('Nombre') 
     marca = fields.Char(String = "Marca")
     codigo = fields.Char(String = "Código de pieza")
     precio_compra = fields.Float('Precio de compra')

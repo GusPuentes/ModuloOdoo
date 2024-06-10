@@ -10,7 +10,7 @@
           <calendar string="Citas" date_start="entrada" date_stop="salida">
               <field name="name"/>
               <field name="telefono"/>
-              <field name="marca"/>
+              <field name="matricula"/>
           </calendar>
       </field>
     </record>
@@ -22,9 +22,9 @@
       <field name="arch" type="xml">
         <tree>
           <field name = "name"/>
-          <field name = "marca"/>
-          <field name = "entrada"/>
-          <field name = "salida" />
+          <field name="telefono"/>
+          <field name = "matricula"/>
+          <field name = "entrada" />
         </tree>
       </field>  
     </record>
@@ -41,7 +41,8 @@
         <group >
           <field name="name"/>
           <field name="marca"/>
-          <field name="telefono" string="Matrícula"/>
+          <field name="telefono" />
+          <field name="matricula" />
           <field name="entrada"/>
           <field name="salida"/>
         </group>
